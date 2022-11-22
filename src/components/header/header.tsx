@@ -32,6 +32,10 @@ const LogoMobileCont = styled.div`
 `;
 
 const IconsMobile = styled.div`
+    button{
+        background-color: transparent;
+        border: none;
+    }
     @media (max-width: 1100px){
         display: flex;
         width: 120px;
@@ -48,6 +52,10 @@ const LogoMobile = styled.div`
             font-size: 20px;
             margin-left: 23px;
             color: #1B4B66;
+        }
+        button{
+            background-color: transparent;
+            border: none;
         }
     }
 `;
@@ -149,13 +157,13 @@ export function Header() {
 
             <LogoMobileCont>
                 <LogoMobile>
-                    <img src="/src/assets/leading.svg" alt="" />
+                    <button><img src="/src/assets/leading.svg" alt="" /></button>
                     <h1>Home</h1>
                 </LogoMobile>
                 <IconsMobile>
-                    <ImgMobile src="/src/assets/addto.svg" alt="" />
-                    <ImgMobile src="/src/assets/search.svg" alt="" />
-                    <ImgMobile src="/src/assets/notification.svg" alt="" />
+                    <button><ImgMobile src="/src/assets/addto.svg" alt="" /></button>
+                    <button><ImgMobile src="/src/assets/search.svg" alt="" /></button>
+                    <button><ImgMobile src="/src/assets/notification.svg" alt="" /></button>
                 </IconsMobile>
             </LogoMobileCont>
 

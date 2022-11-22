@@ -201,10 +201,10 @@ export function Footer() {
             </ContainerLinks>
             <ContainerLinkSide>
                 <RedeSocialCont>
-                    <img src="/src/assets/facebook.svg" alt="" />
-                    <img src="/src/assets/instagram.svg" alt="" />
-                    <img src="/src/assets/twitter.svg" alt="" />
-                    <img src="/src/assets/youtube.svg" alt="" />
+                    <a href="https://pt-br.facebook.com/"><img src="/src/assets/facebook.svg" alt="" /></a>
+                    <a href="https://www.instagram.com/"><img src="/src/assets/instagram.svg" alt="" /></a>
+                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D"><img src="/src/assets/twitter.svg" alt="" /></a>
+                    <a href="https://www.youtube.com/"><img src="/src/assets/youtube.svg" alt="" /></a>
                 </RedeSocialCont>
                 <LocCont>
                     <img src="src/assets/location.svg" alt="" />
