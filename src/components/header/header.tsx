@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const HeaderCont = styled.div`
+const HeaderCont = styled.header`
     display: flex;
     width: 100%;
     height: 80px;
@@ -103,6 +103,11 @@ const IconsCont = styled.div`
     width: 114px;
     display: flex;
     justify-content: space-around;
+
+    button{
+        background-color: transparent;
+        border: none;
+    }
     @media (max-width: 1100px){
         display: none;
         }
@@ -170,9 +175,9 @@ export function Header() {
             <InputIconCont>
                 <input type="text" placeholder="Search for products or brands....." />
                 <IconsCont>
-                    <ImgDesktop src="/src/assets/coracao.svg" alt="" />
-                    <ImgDesktop src="/src/assets/profile.svg" alt="" />
-                    <ImgDesktop src="/src/assets/bolsa.svg" alt="" />
+                    <button><ImgDesktop src="/src/assets/coracao.svg" alt="" /></button>
+                    <button><ImgDesktop src="/src/assets/profile.svg" alt="" /></button>
+                    <button><ImgDesktop src="/src/assets/bolsa.svg" alt="" /></button>
                 </IconsCont>
             </InputIconCont>
         </HeaderCont>
