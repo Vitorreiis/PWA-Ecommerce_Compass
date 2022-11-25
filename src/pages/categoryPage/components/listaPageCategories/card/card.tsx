@@ -57,6 +57,13 @@ const Descricao = styled.div`
     }
 `;
 
+const DescricaoProduto = styled.div`
+        font-weight: 500;
+        font-size: 14px;
+        color: #1B4B66;
+
+`;
+
 const Preco = styled.div`
     display: flex;
 
@@ -116,7 +123,7 @@ export function CardCategory({ nomeProduto, imgProduto, descricaoProduto, valorP
                 <h1>{nomeProduto}</h1>
                 <ButtonLike onClick={handleCheck}><img src={isChecked ? '/src/assets/coracao-checked.svg' : '/src/assets/like-card.svg'} alt="" /></ButtonLike>
             </TituloIconCont>
-            <h2>{descricaoProduto}</h2>
+            <DescricaoProduto>{descricaoProduto}</DescricaoProduto>
             <Descricao>
                 <div>
                     {stars.map((_, index) => {

@@ -8,6 +8,13 @@ import ListaCards from "./components/listaCards/listaCards"
 import CardCollections from "./components/collections/collections"
 import ListaBrands from "./components/listaBrands/listaBrands"
 import BannerTypes from "./components/bannerTypes/bannerTypes"
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+} from "react-router-dom";
+
 
 const BodyCont = styled.div`
   margin: 0 20px;

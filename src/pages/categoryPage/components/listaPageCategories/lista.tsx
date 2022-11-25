@@ -9,6 +9,7 @@ import CardCategory from "./card/card";
 const ListaCategoriesCont = styled.div`
     padding: 0 20px;
     margin-top: 68px;
+    width: 100%;
     h2{
         font-weight: 500;
         font-size: 16px;
@@ -66,6 +67,7 @@ const OptMenu = styled.div`
 
 
 const ContainerLista = styled.div`
+width: 100%;
     
 `;
 
@@ -76,6 +78,46 @@ const InnerContLista = styled.ul`
 const ImageTitulo = styled.img`
     width: 10px;
     height: 10px;
+`;
+
+const InnerMenuLista = styled.div`
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 26px;
+    h4{
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    label{
+        font-weight: 500;
+        font-size: 16px;
+    }
+`;
+
+const ToShow = styled.div`
+    input{
+        width: 56px;
+height: 52px;
+background: #F1F1F1;
+border: none;
+    }
+`;
+
+const SelectCont = styled.div`
+    select{
+        width: 206px;
+        height: 56px;
+        background: #F1F1F1;
+        border-radius: 4px;
+        border: none;
+    }
+`;
+
+const ConteudoMenu = styled.div`
+    display: flex;
 `;
 
 export function ListaCategories() {
@@ -137,7 +179,23 @@ export function ListaCategories() {
                     </OptMenu>
                 </MenuLista>
                 <ContainerLista>
-                    <div><h1>MENU</h1></div>
+                    <InnerMenuLista>
+                        <ConteudoMenu>
+                            <img src="/src/assets/icon-MenuCategory2.svg" alt="" />
+                            <img src="/src/assets/icon-MenuCategory1.svg" alt="" />
+                            <h4>Showing 1 - 40 of 145 items</h4>
+                        </ConteudoMenu>
+                        <ToShow>
+                            <label htmlFor="ToShow">To Show: </label>
+                            <input type="text" />
+                        </ToShow>
+                        <SelectCont>
+                            <label htmlFor="">Sort By: </label>
+                            <select name="SortBy" id="">
+                                <option value="">Position</option>
+                            </select>
+                        </SelectCont>
+                    </InnerMenuLista>
                     <InnerContLista>
                         {arrayCardsCategory.map((produto, index) => (
                             <CardCategory key={index}
