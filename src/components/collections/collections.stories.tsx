@@ -2,7 +2,7 @@ import Footer from "./collections";
 import CardCollections from "./collections";
 
 export default {
-    title: 'Components/Footer',
+    title: 'Components/CardCollections',
     component: CardCollections,
 }
 

@@ -1,8 +1,8 @@
 import ListaCards from "./listaBrands"
 
 export default {
-    title: 'Components/ListaCards',
+    title: 'Components/ListaBrands',
     component: ListaCards,
 }
 
-export const ListaCardsContainer = {}
+export const ListaBrandsContainer = {}

@@ -1,7 +1,7 @@
 import CardCategory from "./card"
 
 export default {
-    title: 'Components/Footer',
+    title: 'Components/Categories',
     component: CardCategory,
 }
 

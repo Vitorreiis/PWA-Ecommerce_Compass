@@ -1,7 +1,7 @@
 import BannerTypes from "./bannerTypes"
 
 export default {
-    title: 'Components/Card',
+    title: 'Components/BannerTypes',
     component: BannerTypes,
 }
 

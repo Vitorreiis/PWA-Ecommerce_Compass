@@ -1,7 +1,7 @@
 import Banner from "./banner";
 
 export default {
-    title: 'Components/Footer',
+    title: 'Components/Banner',
     component: Banner,
 }
 
