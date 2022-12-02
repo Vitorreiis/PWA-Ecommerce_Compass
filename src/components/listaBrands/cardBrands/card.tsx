@@ -1,15 +1,8 @@
-import styled from "styled-components";
-
-const CardBrandsCont = styled.div`
-    img{
-        width: 168px;
-        height: 168px;
-    }
-`;
+import { CardBrandsCont } from "./styles";
 
 export function CardBrands({imgBrands}: {imgBrands: string,}) {
     return (
-        <CardBrandsCont>
+        <CardBrandsCont href="">
             <img src={imgBrands} alt="" />
         </CardBrandsCont>
     )

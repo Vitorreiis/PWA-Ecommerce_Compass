@@ -4,49 +4,9 @@ import {motion} from 'framer-motion';
 import { useState, useEffect} from "react";
 import { useRef } from "react";
 import React from "react";
-
-const ListaCardsCont = styled.div`
-    width: 100%;
-    height: 500px;
-    justify-content: space-between;
-`;
-
-const TituloCont = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    h1{
-        font-weight: 600;
-        font-size: 34px;
-        margin-bottom: 24px;
-        margin-top: 68px;
-    }
-`;
+import { ListaCardsCont, TituloCont, LinkViewAll, UlCards } from "./styles";
 
 
-const LinkViewAll = styled.div`
-    display: flex;
-    align-items: center;
-    a{
-        display: flex;
-        background-color: transparent;
-        border: none;
-        position: relative;
-        bottom: -1px;
-    }
-
-    h2{
-        font-weight: 600;
-        font-size: 14px;
-        color: #1B4B66;
-        margin-right: 16px;
-    }
-`;
-
-
-const UlCards = styled.div`
-    display: flex;
-`;
 
 
 export function ListaCards() {
@@ -58,25 +18,25 @@ export function ListaCards() {
     let arrayCards = [
         {
             nomeProduto: 'Grande',
-            imgProduto: '/src/assets/image-card1.svg',
+            imgProduto: '/src/assets/card-image1.png',
             descricaoProduto: 'Blossom Pouch',
             valorProduto: '$39.49',
         },
         {
             nomeProduto: 'Coach',
-            imgProduto: '/src/assets/image-card2.svg',
+            imgProduto: '/src/assets/card-image2.png',
             descricaoProduto: 'Leather Coach Bag',
             valorProduto: '$54.69',
         },
         {
             nomeProduto: 'Remus',
-            imgProduto: '/src/assets/image-card3.svg',
+            imgProduto: '/src/assets/card-image3.png',
             descricaoProduto: 'Brown Strap Bag',
             valorProduto: '$57.00',
         },
         {
             nomeProduto: 'Boujee',
-            imgProduto: '/src/assets/image-card4.svg',
+            imgProduto: '/src/assets/card-image4.png',
             descricaoProduto: 'Black Bag',
             valorProduto: '$56.49',
         },
@@ -93,7 +53,7 @@ export function ListaCards() {
                     <a><img src="src/assets/arrow-black.svg" alt="" /></a>
                 </LinkViewAll>
             </TituloCont>
-            <UlCards as={motion.div} drag="x" dragConstraints={{right: 0, left: -600}}>
+            <UlCards as={motion.div} drag="x" dragConstraints={{right: 0, left: -300}}>
             {arrayCards.map((produto, index) => (
                 <Card 
                 {...produto}
