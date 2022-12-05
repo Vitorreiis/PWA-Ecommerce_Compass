@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components"
+import ProdutoCart from "./Produto/Produto";
 
 const Container = styled.div`
 width: 710px;
 `;
 
-const TituloPage = styled.div`
+export const TituloPage = styled.div`
     font-weight: 600;
     font-size: 34px;
     color: #1B4B66;
@@ -43,35 +44,6 @@ const InnerCard = styled.li`
     justify-content: space-between;
 `;
 
-const Produto = styled.li`
-    display: flex;
-    width: 100%;
-
-    img{
-        width: 75px;
-        height: 80px;
-        border-radius: 8px;
-        margin-right: 16px;
-    }
-`;
-
-const DescricaoProduto = styled.li`
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-around;
-
-    h1{
-        font-weight: 500;
-        font-size: 16px;
-    }
-
-    h2{
-        font-weight: 400;
-        font-size: 16px;
-        color: #626262;
-    }
-`;
 
 const PrecoProduto = styled.li`
     display: flex;
@@ -127,14 +99,7 @@ function ListaCartContainer() {
                 <Lista>
                     <Card>
                         <InnerCard>
-                            <Produto>
-                                <img src="/src/assets/card-image1.png" alt="" />
-                                <DescricaoProduto>
-                                    <h1>Name</h1>
-                                    <h2>descricao</h2>
-                                    <h2>Qty- 1</h2>
-                                </DescricaoProduto>
-                            </Produto>
+                            <ProdutoCart />
                             <PrecoProduto>
                                 <h2>$54.69</h2>
                                 <h2>1</h2>

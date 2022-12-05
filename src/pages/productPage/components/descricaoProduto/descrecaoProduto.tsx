@@ -194,7 +194,7 @@ export const ButtonAddBag = styled.button`
 
 export const ButtonAddTo = styled.button`
     display: flex;
-    width: 40%;
+    width: 150px;
     height: 44px;
     border: 2px solid #1B4B66;
     border-radius: 8px;
@@ -205,6 +205,9 @@ export const ButtonAddTo = styled.button`
     color: #1B4B66;
     font-weight: 600;
     font-size: 14px;
+    :hover{
+        cursor: pointer;
+    }
     img{
         width: 24px;
         height: 24px;
