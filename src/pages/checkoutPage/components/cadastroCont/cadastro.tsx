@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components"
+import ButtonCart from "../buttons/button";
 
 const Container = styled.div`
     padding: 0 20px;
@@ -59,27 +60,7 @@ const InputDD = styled.input`
         margin-right: 8px;
 `;
 
-const Button = styled.div`
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
 
-        button{
-            border: none;
-            width: 136px;
-            height: 44px;
-            font-weight: 600;
-            font-size: 14px;
-            color: white;
-            background: #1B4B66;
-            border-radius: 8px;
-            padding: 10px 8px;
-            :hover{
-                cursor: pointer;
-            }
-        }
-`;
 
 
 
@@ -122,12 +103,8 @@ function Cadastro() {
             <div>
                 <Titulo>Select Payment Method</Titulo>
             </div>
-            <Button>
-                <Link to='/cartPage'>
-                <a href="">Back to Cart</a>
-                </Link>
-                <button type="submit">Next</button>
-            </Button>
+            
+            <ButtonCart />
         </Container>
     )
 }
