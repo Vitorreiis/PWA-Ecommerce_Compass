@@ -8,6 +8,7 @@ import {
 import HomePage from "./pages/homePage/homePage"
 import CategoryPage from "./pages/categoryPage/categoryPage"
 import ProductPage from "./pages/productPage/productPage";
+import CartPage from "./pages/cartPage/cartPage";
 
 
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<HomePage />}/>
           <Route path="/categories" element={<CategoryPage />} />
           <Route path="/productPage" element={<ProductPage />} />
+          <Route path="/cartPage" element={<CartPage />} />
         </Routes>
       </Router>
     </>

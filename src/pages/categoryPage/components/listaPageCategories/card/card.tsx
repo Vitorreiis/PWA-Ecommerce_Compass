@@ -97,9 +97,11 @@ export function CardCategory({ nomeProduto, imgProduto, descricaoProduto, valorP
     }
 
     return (
-        <Link to='/productPage'>
+        
             <CardCont>
+                <Link to='/productPage'>
                 <img src={imgProduto} alt="" />
+                </Link>
                 <TituloIconCont>
                     <h1>{nomeProduto}</h1>
                     <ButtonLike onClick={handleCheck}><img src={isChecked ? '/src/assets/coracao-checked.svg' : '/src/assets/like-card.svg'} alt="" /></ButtonLike>
@@ -114,7 +116,6 @@ export function CardCategory({ nomeProduto, imgProduto, descricaoProduto, valorP
                     <h5>50% OFF</h5>
                 </Preco>
             </CardCont>
-        </Link>
     )
 }
 

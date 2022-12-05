@@ -13,9 +13,10 @@ export function Card({ nomeProduto, imgProduto, descricaoProduto, valorProduto}:
     }
 
     return (
-        <Link to={"/productPage"}>
             <CardCont>
-            <img src={imgProduto} alt="" />
+            <Link to='/productPage'>
+                <img src={imgProduto} alt="" />
+            </Link>
             <TituloIconCont>
                 <h1>{nomeProduto}</h1>
                 <ButtonLike onClick={handleCheck}><img src={isChecked ? '/src/assets/coracao-checked.svg' : '/src/assets/like-card.svg'} alt="" /></ButtonLike>
@@ -23,7 +24,6 @@ export function Card({ nomeProduto, imgProduto, descricaoProduto, valorProduto}:
             <h2>{descricaoProduto}</h2>
             <h4>{valorProduto}</h4>
         </CardCont>
-        </Link>
     )
 }
 

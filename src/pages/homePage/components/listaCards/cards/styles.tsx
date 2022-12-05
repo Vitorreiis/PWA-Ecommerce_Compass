@@ -31,6 +31,11 @@ export const CardCont = styled.div`
             font-weight: 600;
             font-size: 14px;
         }
+
+        img{
+            width: 136px;
+            height: 138px;
+        }
     }
 `;
 
@@ -47,6 +52,11 @@ export const TituloIconCont = styled.div`
         h1{
             font-weight: 600;
             font-size: 12px;
+        }
+
+        img{
+            width: 20px;
+height: 20px;
         }
     }
 `;

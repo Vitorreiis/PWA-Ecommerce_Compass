@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import InputCupom from "../../../../components/inputCupom/inputCupom";
 import StarContainer from "../../../../components/star/star";
 import CaminhoPages from "../caminhoPages/caminhoPage";
 
@@ -56,30 +57,6 @@ const ContainerDelivery = styled.div`
     border-top: 1px solid rgba(0, 0, 0, 0.12);
     padding-top: 24px;
     margin-bottom: 40px;
-    input{
-        display: flex;
-        width: 350px;
-        background: #F1F1F1;
-        border-top-left-radius: 4px;
-        border-bottom-left-radius: 4px;
-        padding: 18px 12px 18px 16px;
-        gap: 12px;
-        border: none;
-    }
-
-    button{
-        padding: 18px 12px 18px 16px;
-        border: none;
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px;
-        background: #F1F1F1;
-        color: #1B4B66;
-        font-weight: 600;
-        font-size: 14px;
-        :hover{
-            cursor: pointer;
-        }
-    }
 `;
 
 const TextoDelivery = styled.div`
@@ -191,10 +168,10 @@ const ContainerButtons = styled.h4`
     }
 `;
 
-const ButtonAddBag = styled.button`
+export const ButtonAddBag = styled.button`
     border: none;
     display: flex;
-    width: 40%;
+    width: 240px;
     height: 44px;
     gap: 8px;
     background: #1B4B66;
@@ -204,6 +181,9 @@ const ButtonAddBag = styled.button`
     color: white;
     align-items: center;
     justify-content: center;
+    :hover{
+        cursor: pointer;
+    }
 
     img{
         width: 24px;
@@ -212,9 +192,9 @@ const ButtonAddBag = styled.button`
 `;
 
 
-const ButtonAddTo = styled.button`
+export const ButtonAddTo = styled.button`
     display: flex;
-    width: 30%;
+    width: 40%;
     height: 44px;
     border: 2px solid #1B4B66;
     border-radius: 8px;
@@ -254,8 +234,7 @@ export function DescricaoProduto() {
                         <h4>Delivery Details</h4>
                         <h5>Check estimated delivery date/pickup option.</h5>
                     </TextoDelivery>
-                    <input type="text" placeholder="Apply Valid Pincode"/>
-                    <button>CHECK</button>
+                    <InputCupom />
                 </ContainerDelivery>
 
                 <CounterContainer>
