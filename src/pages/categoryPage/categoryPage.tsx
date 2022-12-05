@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Banner from "../../components/banner/banner";
+import Banner from "../homePage/components/banner/banner";
 import Header from "../../components/header/header";
 import BannerCategory from "./components/banner/banner";
 import ListaCategories from "./components/listaPageCategories/lista";

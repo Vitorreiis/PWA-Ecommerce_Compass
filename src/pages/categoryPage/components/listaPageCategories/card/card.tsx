@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { FaStar } from "react-icons/fa"
+import StarContainer from "../../../../../components/star/star";
 
 
 const CardCont = styled.div`
@@ -95,60 +96,25 @@ export function CardCategory({ nomeProduto, imgProduto, descricaoProduto, valorP
         setChecked((preventState) => !preventState)
     }
 
-    const colors = {
-        orange: '#FF8C4B',
-        grey: '#F1F1F1;'
-    }
-
-    const stars = Array(5).fill(0);
-    const [currentValue, setCurrentValue] = React.useState(0);
-    const [hoverValue, setHoverValue] = React.useState(undefined);
-
-    const handClickStar = (value: React.SetStateAction<number>) => {
-        setCurrentValue(value)
-    };
-
-    const handleMouseOver = (value: number | any) => {
-        setHoverValue(value)
-    };
-
-    const handleMouseLeave = () => {
-        setHoverValue(undefined);
-    }
-
     return (
-        <CardCont>
-            <img src={imgProduto} alt="" />
-            <TituloIconCont>
-                <h1>{nomeProduto}</h1>
-                <ButtonLike onClick={handleCheck}><img src={isChecked ? '/src/assets/coracao-checked.svg' : '/src/assets/like-card.svg'} alt="" /></ButtonLike>
-            </TituloIconCont>
-            <DescricaoProduto>{descricaoProduto}</DescricaoProduto>
-            <Descricao>
-                <div>
-                    {stars.map((_, index) => {
-                        return (
-                            <FaStar 
-                            key={index}
-                            size={24}
-                            style={{
-                                marginRight: 3,
-                                cursor: "pointer",
-                            }}
-                            color={(hoverValue || currentValue) > index ? colors.orange : colors.grey}
-                            onClick={() => handClickStar(index + 1)}
-                            onMouseLeave={handleMouseLeave}
-                            />
-                        )
-                    })}
-                </div>
-                <h2>43 Ratings</h2>
-            </Descricao>
-            <Preco>
-                <h4>{valorProduto} <span>{valorSemDesc}</span></h4>
-                <h5>50% OFF</h5>
-            </Preco>
-        </CardCont>
+        <Link to='/productPage'>
+            <CardCont>
+                <img src={imgProduto} alt="" />
+                <TituloIconCont>
+                    <h1>{nomeProduto}</h1>
+                    <ButtonLike onClick={handleCheck}><img src={isChecked ? '/src/assets/coracao-checked.svg' : '/src/assets/like-card.svg'} alt="" /></ButtonLike>
+                </TituloIconCont>
+                <DescricaoProduto>{descricaoProduto}</DescricaoProduto>
+                <Descricao>
+                    <StarContainer />
+                    <h2>43 Ratings</h2>
+                </Descricao>
+                <Preco>
+                    <h4>{valorProduto} <span>{valorSemDesc}</span></h4>
+                    <h5>50% OFF</h5>
+                </Preco>
+            </CardCont>
+        </Link>
     )
 }
 

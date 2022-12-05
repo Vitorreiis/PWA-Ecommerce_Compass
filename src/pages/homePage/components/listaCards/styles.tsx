@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const ListaCardsCont = styled.div`
     width: 100%;
     justify-content: space-between;
+    margin-top: 68px;
 
     @media (max-width: 1100px){
         
@@ -14,11 +15,11 @@ export const TituloCont = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     h1{
         font-weight: 600;
         font-size: 34px;
         margin-bottom: 24px;
-        margin-top: 68px;
     }
 
     @media (max-width: 1100px){

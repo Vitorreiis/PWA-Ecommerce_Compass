@@ -1,5 +1,6 @@
 import React from "react";
 import { CardCont, TituloIconCont, ButtonLike } from "./styles";
+import { Link } from "react-router-dom";
 
 export function Card({ nomeProduto, imgProduto, descricaoProduto, valorProduto}: { nomeProduto: string, imgProduto: string, descricaoProduto: string, valorProduto: String}) {
 
@@ -12,7 +13,8 @@ export function Card({ nomeProduto, imgProduto, descricaoProduto, valorProduto}:
     }
 
     return (
-        <CardCont>
+        <Link to={"/productPage"}>
+            <CardCont>
             <img src={imgProduto} alt="" />
             <TituloIconCont>
                 <h1>{nomeProduto}</h1>
@@ -21,6 +23,7 @@ export function Card({ nomeProduto, imgProduto, descricaoProduto, valorProduto}:
             <h2>{descricaoProduto}</h2>
             <h4>{valorProduto}</h4>
         </CardCont>
+        </Link>
     )
 }
 

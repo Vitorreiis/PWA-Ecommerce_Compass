@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import Card from "../cards/cards";
+import Card from "./cards/cards";
 import {motion} from 'framer-motion';
 import { useState, useEffect} from "react";
 import { useRef } from "react";
 import React from "react";
 import { ListaCardsCont, TituloCont, LinkViewAll, UlCards } from "./styles";
+import { Link } from "react-router-dom";
 
 
 
@@ -48,10 +49,12 @@ export function ListaCards() {
         <ListaCardsCont as={motion.div} ref= {carousel}>
             <TituloCont>
                 <h1>New Arrivals</h1>
+                <Link to='/categories'>
                 <LinkViewAll>
                     <h2>View All</h2>
                     <a><img src="src/assets/arrow-black.svg" alt="" /></a>
                 </LinkViewAll>
+                </Link>
             </TituloCont>
             <UlCards as={motion.div} drag="x" dragConstraints={{right: 0, left: -300}}>
             {arrayCards.map((produto, index) => (

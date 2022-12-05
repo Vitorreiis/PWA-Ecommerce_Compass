@@ -7,6 +7,7 @@ export const CardCont = styled.div`
     max-width: 286px;
     height: 371px;
     margin-right: 40px;
+    color: black;
     h2{
         font-weight: 400;
         font-size: 14px;

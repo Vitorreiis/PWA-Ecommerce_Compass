@@ -1,11 +1,11 @@
 import styled from "styled-components"
-import Banner from "../../components/banner/banner";
+import Banner from "./components/banner/banner";
 import Header from "../../components/header/header";
 import { GlobalStyle } from "../../components/GlobalStyle";
-import ListaCards from "../../components/listaCards/listaCards";
-import CardCollections from "../../components/collections/collections";
-import ListaBrands from "../../components/listaBrands/listaBrands";
-import BannerTypes from "../../components/bannerTypes/bannerTypes";
+import ListaCards from "./components/listaCards/listaCards";
+import CardCollections from "./components/collections/collections";
+import ListaBrands from "./components/listaBrands/listaBrands";
+import BannerTypes from "./components/bannerTypes/bannerTypes";
 import Footer from "../../components/footer/footer";
   
 const BodyCont = styled.div`
