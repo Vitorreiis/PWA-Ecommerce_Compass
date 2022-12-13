@@ -7,7 +7,7 @@ const Container = styled.div`
     bottom: 0;
 
     button{
-        display: flex;
+        display: none;
         h1{
             display: none;
             font-weight: 500;

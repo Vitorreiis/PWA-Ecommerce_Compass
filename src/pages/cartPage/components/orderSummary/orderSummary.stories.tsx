@@ -1,7 +1,8 @@
-import OrderSummary from "./orderSummary";
+import OrderSummary from "./orderSummary"
+
 
 export default {
-    title: 'Components/Banner',
+    title: 'Components/OrderSummary',
     component: OrderSummary,
 }
 

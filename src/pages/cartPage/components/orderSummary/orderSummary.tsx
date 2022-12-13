@@ -41,7 +41,7 @@ function OrderSummary() {
             <TituloOrderSumary>Order Summary</TituloOrderSumary>
             <TabelaValor />
             <ButtonsCont>
-                <Link to='/checkout'>
+                <Link to='/pageCheckout'>
                 <ButtonAddBag>Place Order</ButtonAddBag>
                 </Link>
                 <Link to='/'>

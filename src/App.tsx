@@ -24,7 +24,7 @@ function App() {
           <Route path="/categories" element={<CategoryPage />} />
           <Route path="/productPage" element={<ProductPage />} />
           <Route path="/cartPage" element={<CartPage />} />
-          <Route path="/checkout" element={<PageCheckout />} />
+          <Route path="/pageCheckout" element={<PageCheckout />} />
           <Route path="/Payment" element={<PaymentPage />} />
         </Routes>
       </Router>
